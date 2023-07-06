@@ -1,0 +1,58 @@
+body {
+    background-color: #1b1b32;
+    color: rgb(255, 255, 255);
+    margin: auto;
+    width: 100%;
+    font-family: Tahoma;
+    font-size: 16px;
+}
+label {
+    display: block;
+    margin: 0.7rem;
+}
+h1, p {
+    margin: 1em auto;
+    text-align: center;
+}
+form {
+    margin: auto;
+    max-width: 750px;
+    min-width: 500px;
+    width: 100vh;
+    background-color: rgba(59, 33, 123, 0.2);
+    padding: 1.5em;
+}
+fieldset {
+    border: none;
+    padding: 0 2em;
+    margin: 0;
+}
+input[type="submit"] {
+    width: 100%;
+    height: 3em;
+    display: block;
+    font-size: 1em;
+    background-color: green;
+    border: none;
+    color: #ffffff;
+}
+input, select, textarea {
+    width: 100%;
+    border-radius: 5px;
+    min-height: 3em;
+    margin: 1px 0.7rem 1em 0.7rem;
+    padding: 3px 3px 3px 7px;
+}
+.inline {
+    width: unset; /* this aligns label and input and rules out width set in the body element. Because theres two different elements, if 100% width exists between them then they will be in different lines. therefore unset so they can be in the same line */
+    margin: 0 0.5em 0 0; /* sets right margin between input and label to 0.5em. the other margins are 0*/
+    vertical-align: middle; /* this aligns the input and label element */
+}
+
+#number-label {
+    padding-top: 5px;
+
+}
+#submit {
+    margin-top: 5px;
+}
