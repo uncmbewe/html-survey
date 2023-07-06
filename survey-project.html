@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <body>
+        <link rel="stylesheet" href="styles3.css">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Thank you for taking the time to help me better my coding knowledge</p>
+        <form id="survey-form">
+            <fieldset>
+                <label id="name-label">Name: </label><input id="name" type="text" placeholder="Please enter your name" required></input>
+                <label id="email-label">Email: </label></input><input id="email" type="email" placeholder="Please enter your Email" required></input>
+                <label id="number-label">Age (optional): </label><input id="number" type="number" placeholder="How old are you?" min="18" max="45"></input>
+                 <label>Which option best describes your current occupation?  </label>
+                    <select id="dropdown">
+                        <option>Select current occupation</option>
+                        <option>Full time job</option>
+                        <option>Student</option>
+                        <option>Unemployed</option>
+                        <option>Prefer not to say</option>
+                        <option>Other</option>
+                    </select>
+            </fieldset>
+            <fieldset>
+                <label>Would you say you are particulary good at what you do?</label>
+                <label><input class="inline" type="radio" name="skillset" value="definitely" checked> Definitely</label>
+                <label><input class="inline" type="radio" name="skillset" value="average" checked> I am average</label>
+                <label><input class="inline" type="radio" name="skillset" value="beginner" checked> I am a beginner</label>
+                <label><input class="inline" type="radio" name="skillset" value="clueless" checked> I have no idea what I am doing</label>
+            </fieldset>
+            <fieldset>
+                <label>What is your favorite part about your current occupation?</label>
+                    <select>
+                        <option>Projects</option>
+                        <option>Colleagues</option>
+                        <option>Salary</option>
+                        <option>I don't like it</option>
+                    </select> 
+            </fieldset>
+            <fieldset>
+                <label>What would make your current occupation more enjoyable?</label>
+                    <label><input class="inline" type="checkbox" value="1"> More Team Building Activities</label>
+                    <label><input class="inline" type="checkbox" value="2"> Less Projects</label>
+                    <label><input class="inline" type="checkbox" value="3"> More Free Time</label>
+                    <label><input class="inline" type="checkbox" value="4"> Additional Courses</label>
+            </fieldset>
+            <fieldset>
+                <label>Any comments or suggestions? </label><textarea name="comment" placeholder="Enter your comment here" rows="10"></textarea>
+                <input id="submit" type="submit" value="Submit"></input>
+            </fieldset>
+        </form>
+        </body>
+    </head>
+</html>
